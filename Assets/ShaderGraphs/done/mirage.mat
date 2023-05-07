@@ -57,5 +57,5 @@ Material:
     - _QueueOffset: 0
     m_Colors:
     - _ScrollSpeed: {r: 0, g: 0.1, b: 0, a: 0}
-    - _Tiling: {r: 1, g: 0.1, b: 0, a: 0}
+    - _Tiling: {r: 2, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []

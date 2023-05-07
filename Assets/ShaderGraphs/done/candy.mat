@@ -51,7 +51,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Roughness: 0.4
-    - _Spiral: 0
+    - _Spiral: 1
     - _Stripes: 2.64
     - _StripesThiccness: 0.178
     - _StripesThickness: 0.2

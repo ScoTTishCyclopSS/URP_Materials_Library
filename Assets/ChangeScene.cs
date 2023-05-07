@@ -9,4 +9,10 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene (sceneBuildIndex: idx);
     }
+    
+    public void ExitApp()
+    {
+        Application.Quit();
+        Debug.Log("Game is exiting");
+    }
 }

@@ -16,7 +16,7 @@ public class Demo : MonoBehaviour
     public MaterialList[] materialList;
     public TMP_Text matName;
 
-    private int _currMat;
+    private int _currMaterialIndex;
     private MeshRenderer _meshRenderer;
     private MeshFilter _meshFilter;
     
@@ -25,6 +25,8 @@ public class Demo : MonoBehaviour
 
     [Range(10f, 100f)] public float spinAngle = 50f;
     private bool _isSpinning;
+
+    [HideInInspector]public static string MaterialName = "";
 
     private void Start()
     {
@@ -36,19 +38,40 @@ public class Demo : MonoBehaviour
 
     private void AssignMaterial()
     {
-        Material[] matSelected = materialList[_currMat].materials;
+        if (MaterialName != "")
+        {
+            for (int i = 0; i < materialList.Length; i++)
+            {
+                if (materialList[i].materials[0].name.Replace(" (Instance)", "") == MaterialName)
+                {
+                    _currMaterialIndex = i;
+                    MaterialName = "";
+                    break;
+                }
+            }
+        }
+        
+        Material[] matSelected = materialList[_currMaterialIndex].materials;
         matName.text = matSelected[0].name;
         _meshRenderer.materials = matSelected;
     }
 
     public void ChangeMaterial(int i)
     {
-        var newIndex = _currMat + i;
-        if (newIndex >= 0 && newIndex < materialList.Length)
+        var newIndex = _currMaterialIndex + i;
+
+        if (newIndex < 0)
         {
-            _currMat = newIndex;
-            AssignMaterial();
+            newIndex = materialList.Length - 1;
         }
+
+        if (newIndex >= materialList.Length)
+        {
+            newIndex = 0;
+        }
+        
+        _currMaterialIndex = newIndex;
+        AssignMaterial();
     }
 
     public void ChangeMesh(Mesh m)
@@ -59,7 +82,7 @@ public class Demo : MonoBehaviour
     private void Update()
     {
         if (Input.GetMouseButtonDown(2))
-            _isSpinning = !_isSpinning;
+            Spinning();
         
         if (_isSpinning)
             transform.Rotate (0,spinAngle * Time.deltaTime, 0, Space.World);
@@ -75,5 +98,10 @@ public class Demo : MonoBehaviour
         
         transform.Rotate(Vector3.down, x);
         transform.Rotate(Vector3.right, -y);
+    }
+    
+    public void Spinning()
+    {
+        _isSpinning = !_isSpinning;
     }
 }

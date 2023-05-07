@@ -173,20 +173,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "8b915107165f4c8498e2b9f0efd36ba3"
-                },
-                "m_SlotId": 1
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "fe47ecdd3b0a46cdb29cd925cc624b26"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "969c5499d5324ec78b71ee486a1a77d9"
                 },
                 "m_SlotId": 1
@@ -1547,10 +1533,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2724.0,
-            "y": 557.0,
-            "width": 108.0,
-            "height": 34.0
+            "x": -2720.0,
+            "y": 556.0,
+            "width": 105.599853515625,
+            "height": 33.5999755859375
         }
     },
     "m_Slots": [
@@ -1940,8 +1926,8 @@
     "m_ObjectId": "cfbecc9d3e9b4895a41e2f5cf0c54277",
     "m_Title": "Section 1 - Musgrave texture",
     "m_Position": {
-        "x": -2796.0,
-        "y": 336.0
+        "x": -2796.000244140625,
+        "y": 335.20001220703127
     }
 }
 
