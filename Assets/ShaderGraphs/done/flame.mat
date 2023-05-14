@@ -35,7 +35,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _IOR: 1
-    - _Level: 0.386
+    - _Level: 0.37
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Speed: 2

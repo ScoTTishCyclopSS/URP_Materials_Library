@@ -1002,7 +1002,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GroupData",
     "m_ObjectId": "7ce69071cba1458fb8cfbe384b37d285",
-    "m_Title": "Section 2 - ",
+    "m_Title": "Section 2 - Refraction via screen position",
     "m_Position": {
         "x": -1012.800048828125,
         "y": 105.60002136230469
