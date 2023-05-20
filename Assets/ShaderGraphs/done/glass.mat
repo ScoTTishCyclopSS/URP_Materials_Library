@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: glass
-  m_Shader: {fileID: -6465566751694194690, guid: b299947e72f37e3498f27988641e1239, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: d5fa59fc6720ce04c84302d9374b997a, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 2
@@ -34,12 +34,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _IOR: 0.089
+    - _Distortion: 0.059
+    - _DistortionScale: 10.33
+    - _IOR: 0.031
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors: []
   m_BuildTextureStacks: []
---- !u!114 &3676020189140874441
+--- !u!114 &1308478735649158971
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
