@@ -21,4 +21,4 @@ Each material is equipped with parameters that influence the real-time display a
 ![image](https://github.com/ScoTTishCyclopSS/URP_Materials_Library/assets/36488192/70374bef-792b-4388-ae23-e95489a96f96)
 
 ## Acknowledgments
-* [Full text](https://dspace.cvut.cz/handle/10467/108798)https://dspace.cvut.cz/handle/10467/108798) of the creation process, including detailed screenshots of shader graphs.
+* [Full text](https://dspace.cvut.cz/handle/10467/108798) of the creation process, including detailed screenshots of shader graphs.
